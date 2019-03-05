@@ -1,0 +1,87 @@
+.navbar {
+    font-family: "Muli",sans-serif;
+    width: 100%;
+    height: 5.7rem;
+    background: #fff;
+    box-shadow: 0 2px 5px 0 hsla(240, 3%, 85%, .7);
+    // SUB CONTAINER
+    &__sub-container {
+        display: flex;
+        position: fixed;
+        top: 0;
+        margin: auto;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        justify-content: space-between;
+        background: #fff;
+        color: $color-primary-black;
+        box-shadow: 0 2px 5px 0 hsla(240, 3%, 85%, .7); 
+
+        // LEFT NAVBAR
+        .navbar__left {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            &__menu{
+                margin: 0 1rem 0 3rem;
+                &__logo {
+                    width: 25px;
+                }
+            }
+            &__logo{
+                &__img{
+                    width: 175px;
+                }
+            }
+        }
+        //  RIGHT NAVBAR
+        .navbar__right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            list-style: none;
+            // MEDIA QUERIES
+            @include respond(phone){
+                display: none;
+            }
+            &__list{
+                    display: flex;
+                    align-items: center;
+                    font-size: 13px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    list-style: none;
+                    padding: 12px 8px;
+                    letter-spacing: 1.5px;
+                    text-transform: uppercase;
+                    &__link{
+                        display: inline-block;
+                        color: $color-primary-black;
+                        text-decoration: none;
+                        &:hover {
+                            color: #8ebabd;
+                        }
+                    }
+                    &--active{
+                        text-decoration: none;
+                        color: #af4aaf;
+                    }
+                        &__search {
+                            margin: 0 .5rem;
+                            height: 22px; 
+                        }
+                        &__log {
+                            margin: 0 .7rem;
+                            height: 23px; 
+                        }
+            }
+        }
+    }
+}
+
+
+
+
+
+

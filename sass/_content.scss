@@ -1,0 +1,132 @@
+.main-container {
+    margin: 0 auto;
+    width: 90%;
+// HEADER
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 18px;
+
+        &__list {
+            font-family: 'Playfair Display', sans-serif;
+            font-size: 18px;
+            line-height: 13px;
+            font-weight: 700;
+            margin: 0 13px;
+            color: $color-primary-green;
+
+            &__text {
+                color: $color-primary-green;
+                text-decoration: none;
+                &:hover {
+                    color: #0f7bae;
+                }
+            }
+            &:first-child {
+                list-style: none;
+            }
+        }
+    }
+    // TITLE
+    &__heading {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 42px;
+        text-align: center;
+        margin: 0 0 18px 0;
+        color: #111;
+        // MEDIA QURIES
+        @include respond(small-phone){
+            font-size: 38px;
+        }
+    }
+
+    &__social-media {
+        display: flex;
+        justify-content: center;
+
+        &__icons {
+            width: 20%;
+            height: 100%;
+        }
+
+        
+    }
+
+   &__figure {
+        max-width: 850px;
+        margin: 20px auto;
+        &__image {
+            max-width: 100%;
+        }
+        &__caption {
+            font-family: sans-serif;
+            font-size: 9px;
+            line-height: 12px;
+            margin: 5px 1px;
+            color: #a3a5a9;
+    
+        }
+    }
+}
+
+
+
+////////// MAIN CONTENT ////////////
+.main-content {
+    margin: 20px auto;
+    max-width: 780px;
+
+    &__author-photo {
+        width: 260px;
+        margin-left: 22px;
+    }
+
+    &__paragraph {
+        font-family: "Rasa", sans-serif;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 300;
+        margin: 20px;
+        color: #111;
+    }
+}
+
+.movie-title {
+    &__heading {
+        font-family: 'Playfair Display', sans-serif;
+        font-style: italic;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        color: $color-primary-black;
+        ///// MEDIA QUERIES ///////
+        @include respond(small-phone) {
+            font-size: 18px;         
+        }
+    }
+    span {
+        display: block;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        font-family: "Rasa", sans-serif;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    &__img {
+        width: 100%;
+    }
+}
+}
