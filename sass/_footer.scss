@@ -17,7 +17,6 @@
             margin-bottom: 2rem;
         }
     }
-
     &__wrapper{
         display: flex;
         flex-wrap: wrap;
@@ -33,6 +32,11 @@
             padding: 3px 0;
             &:first-child{
                 margin-bottom: 10px;
+            }
+            // MEDIA QUERIES
+            @include respond(small-phone){
+                margin-left:  10px;
+                margin-right: 32px;
             }
             // HEADING
             &__link--heading{
@@ -58,11 +62,20 @@
     }
     // SECOND COL
     &__second-col{
+        // MEDIA QUERIES
+        @include respond(small-phone){
+            margin-bottom: 2rem;
+        }
         &__items{
             list-style: none;
             padding: 3px 0;
             &:first-child{
                 margin-bottom: 10px;
+            }
+            // MEDIA QUERIES
+            @include respond(small-phone){
+                margin-right: 32px;
+
             }
             // HEADING
             &__link--heading{
@@ -88,12 +101,21 @@
     }
     // THIRD COL
     &__third-col{
+        // MEDIA QUERIES
+        @include respond(small-phone){
+            margin-bottom: 2rem;
+        }
         &__items{
             list-style: none;
             padding: 3px 0;
             &:first-child{
                 margin-bottom: 10px;
             }
+                 // MEDIA QUERIES
+                 @include respond(small-phone){
+                     margin-left: 10px;
+                    margin-right: 32px;
+                }
             // HEADING
             &__link--heading{
                 font-size: 13px;
@@ -125,6 +147,10 @@
             &:first-child{
                 margin-bottom: 10px;
             }
+                 // MEDIA QUERIES
+                 @include respond(small-phone){
+                    margin-right: 32px;
+                }
             // HEADING
             &__link--heading{
                 font-size: 13px;
@@ -156,6 +182,10 @@
             &:first-child{
                 margin-bottom: 10px;
             }
+                 // MEDIA QUERIES
+                 @include respond(small-phone){
+                     margin-right: 12rem;
+                }
             // HEADING
             &__link--heading{
                 font-size: 13px;

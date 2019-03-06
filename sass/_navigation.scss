@@ -23,15 +23,28 @@
             display: flex;
             align-items: center;
             list-style: none;
+            // MENU
             &__menu{
                 margin: 0 1rem 0 3rem;
                 &__logo {
                     width: 25px;
                 }
+                // MEDIA QUERIES
+                @include respond(tab-port){
+                    margin: 0 1rem 0 .5rem;
+                }
             }
+            // SITE LOGO
             &__logo{
                 &__img{
                     width: 175px;
+                    // MEDIA QUERIES
+                    @include respond(phone){
+                        margin-left: 13rem;
+                    }
+                    @include respond(small-phone){
+                        margin-left: 4rem;
+                    }
                 }
             }
         }
@@ -55,6 +68,11 @@
                     padding: 12px 8px;
                     letter-spacing: 1.5px;
                     text-transform: uppercase;
+                    // MEDIA QUERIES
+                    @include respond(tab-port){
+                        font-size: 12px;
+                        padding: 6px 5px;
+                    }
                     &__link{
                         display: inline-block;
                         color: $color-primary-black;
